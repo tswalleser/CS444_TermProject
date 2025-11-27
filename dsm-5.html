@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PTSD Checklist for DSM-5 (PCL-5)</title>
+    </head>
+    <body>
+        <h1>PTSD Checklist for DSM-5 (PCL-5)</h1>
+
+    <form id="DSM-5">
+        <div class="form-control">
+            <label for="name" id="label-name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your first and last name" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" min="0" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+        </div>
+
+        <p><strong>Instructions:</strong>Below is a list of problems that people sometimes have in response to a very stressful experience.
+                    Keeping your worst event in mind, please read each problem carefully and then select one of the numbers to the right
+                    to indicate how much you have been bothered by that problem in the past month.</p>
+
+        <fieldset>
+            <legend>1. Repeated, disturbing, and unwanted memories of the stressful experience?</legend>
+            <label><input type="radio" name="q1" value="0" required> Not at all</label>
+            <label><input type="radio" name="q1" value="1"> A little bit</label>
+            <label><input type="radio" name="q1" value="2"> Moderately</label>
+            <label><input type="radio" name="q1" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q1" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Repeated, disturbing dreams of the stressful experience?</legend>
+            <label><input type="radio" name="q2" value="0" required> Not at all</label>
+            <label><input type="radio" name="q2" value="1"> A little bit</label>
+            <label><input type="radio" name="q2" value="2"> Moderately</label>
+            <label><input type="radio" name="q2" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q2" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Suddenly feeling or acting as if the stressful experience were actually happening again (as if you were reliving it)?</legend>
+            <label><input type="radio" name="q3" value="0" required> Not at all</label>
+            <label><input type="radio" name="q3" value="1"> A little bit</label>
+            <label><input type="radio" name="q3" value="2"> Moderately</label>
+            <label><input type="radio" name="q3" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q3" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>4. Feeling very upset when something reminded you of the stressful experience?</legend>
+            <label><input type="radio" name="q4" value="0" required> Not at all</label>
+            <label><input type="radio" name="q4" value="1"> A little bit</label>
+            <label><input type="radio" name="q4" value="2"> Moderately</label>
+            <label><input type="radio" name="q4" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q4" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>5. Having strong physical reactions when something reminded you of the stressful experience (for example, heart pounding, trouble breathing, sweating)?</legend>
+            <label><input type="radio" name="q5" value="0" required> Not at all</label>
+            <label><input type="radio" name="q5" value="1"> A little bit</label>
+            <label><input type="radio" name="q5" value="2"> Moderately</label>
+            <label><input type="radio" name="q5" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q5" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>6. Avoiding memories, thoughts, or feelings related to the stressful experience?</legend>
+            <label><input type="radio" name="q6" value="0" required> Not at all</label>
+            <label><input type="radio" name="q6" value="1"> A little bit</label>
+            <label><input type="radio" name="q6" value="2"> Moderately</label>
+            <label><input type="radio" name="q6" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q6" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>7. Avoiding external reminders of the stressful experience (for example, people, places, conversations, activities, objects, or situations)?</legend>
+            <label><input type="radio" name="q7" value="0" required> Not at all</label>
+            <label><input type="radio" name="q7" value="1"> A little bit</label>
+            <label><input type="radio" name="q7" value="2"> Moderately</label>
+            <label><input type="radio" name="q7" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q7" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>8. Trouble remembering important parts of the stressful experience?</legend>
+            <label><input type="radio" name="q8" value="0" required> Not at all</label>
+            <label><input type="radio" name="q8" value="1"> A little bit</label>
+            <label><input type="radio" name="q8" value="2"> Moderately</label>
+            <label><input type="radio" name="q8" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q8" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>9. Having strong negative beliefs about yourself, other people, or the world (for example, having thoughts such as: I am bad, there is something seriously wrong with me, no one can be trusted, the world is completely dangerous)?</legend>
+            <label><input type="radio" name="q9" value="0" required> Not at all</label>
+            <label><input type="radio" name="q9" value="1"> A little bit</label>
+            <label><input type="radio" name="q9" value="2"> Moderately</label>
+            <label><input type="radio" name="q9" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q9" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>10. Blaming yourself or someone else for the stressful experience or what happened after it?</legend>
+            <label><input type="radio" name="q10" value="0" required> Not at all</label>
+            <label><input type="radio" name="q10" value="1"> A little bit</label>
+            <label><input type="radio" name="q10" value="2"> Moderately</label>
+            <label><input type="radio" name="q10" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q10" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>11. Having strong negative feelings such as fear, horror, anger, guilt, or shame?</legend>
+            <label><input type="radio" name="q11" value="0" required> Not at all</label>
+            <label><input type="radio" name="q11" value="1"> A little bit</label>
+            <label><input type="radio" name="q11" value="2"> Moderately</label>
+            <label><input type="radio" name="q11" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q11" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>12. Loss of interest in activities that you used to enjoy?</legend>
+            <label><input type="radio" name="q12" value="0" required> Not at all</label>
+            <label><input type="radio" name="q12" value="1"> A little bit</label>
+            <label><input type="radio" name="q12" value="2"> Moderately</label>
+            <label><input type="radio" name="q12" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q12" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>13. Feeling distant or cut off from other people?</legend>
+            <label><input type="radio" name="q13" value="0" required> Not at all</label>
+            <label><input type="radio" name="q13" value="1"> A little bit</label>
+            <label><input type="radio" name="q13" value="2"> Moderately</label>
+            <label><input type="radio" name="q13" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q13" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>14. Trouble experiencing positive feelings (for example, being unable to feel happiness or have loving feelings for people close to you)?</legend>
+            <label><input type="radio" name="q14" value="0" required> Not at all</label>
+            <label><input type="radio" name="q14" value="1"> A little bit</label>
+            <label><input type="radio" name="q14" value="2"> Moderately</label>
+            <label><input type="radio" name="q14" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q14" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>15. Irritable behavior, angry outbursts, or acting aggressively?</legend>
+            <label><input type="radio" name="q15" value="0" required> Not at all</label>
+            <label><input type="radio" name="q15" value="1"> A little bit</label>
+            <label><input type="radio" name="q15" value="2"> Moderately</label>
+            <label><input type="radio" name="q15" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q15" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>16. Taking too many risks or doing things that could cause you harm?</legend>
+            <label><input type="radio" name="q16" value="0" required> Not at all</label>
+            <label><input type="radio" name="q16" value="1"> A little bit</label>
+            <label><input type="radio" name="q16" value="2"> Moderately</label>
+            <label><input type="radio" name="q16" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q16" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>17. Being "superalert" or watchful or on guard?</legend>
+            <label><input type="radio" name="q17" value="0" required> Not at all</label>
+            <label><input type="radio" name="q17" value="1"> A little bit</label>
+            <label><input type="radio" name="q17" value="2"> Moderately</label>
+            <label><input type="radio" name="q17" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q17" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>18. Feeling jumpy or easily startled?</legend>
+            <label><input type="radio" name="q18" value="0" required> Not at all</label>
+            <label><input type="radio" name="q18" value="1"> A little bit</label>
+            <label><input type="radio" name="q18" value="2"> Moderately</label>
+            <label><input type="radio" name="q18" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q18" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>19. Having difficulty concentrating?</legend>
+            <label><input type="radio" name="q19" value="0" required> Not at all</label>
+            <label><input type="radio" name="q19" value="1"> A little bit</label>
+            <label><input type="radio" name="q19" value="2"> Moderately</label>
+            <label><input type="radio" name="q19" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q19" value="4"> Extremely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>20. Trouble falling or staying asleep?</legend>
+            <label><input type="radio" name="q20" value="0" required> Not at all</label>
+            <label><input type="radio" name="q20" value="1"> A little bit</label>
+            <label><input type="radio" name="q20" value="2"> Moderately</label>
+            <label><input type="radio" name="q20" value="3"> Quite a bit</label>
+            <label><input type="radio" name="q20" value="4"> Extremely</label>
+        </fieldset>
+
+        <button type="submit" id="submit-button" aria-label="Submit Post Traumatic Stress Disorder Questionnaire">Submit</button>
+
+        <div id="DSM5-results" aria-live="polite" aria-label="Post Traumatic Stress Disorder Questionnaire results"
+            style="display:none; margin-top:20px; padding:15px; border:1px solid #ccc;">
+        </div>
+    </form>
+    
+    <script src="scoring.js"></script>
+    <script>
+        questionnaireScoring("DSM-5", "DSM5-results");
+    </script>
+    </body>
+</html>

@@ -7,18 +7,18 @@
     </head>
     <body>
         <h1>PHQ-9 (Patient Health Questionnaire-9)</h1>
-        
+
     <form id="PHQ-9">
         <div class="form-control">
             <label for="name" id="label-name">Name:</label>
             <input type="text" id="name" placeholder="Enter your first and last name" required/>
         </div>
-        
+
         <div class="form-control">
             <label for="email" id="label-email">Email:</label>
             <input type="email" id="email" placeholder="Enter your email" required/>
         </div>
-        
+
         <div class="form-control">
             <label for="age" id="label-age">Age:</label>
             <input type="number" id="age" placeholder="Enter your age" min="0" required/>
@@ -117,7 +117,16 @@
                 <label><input type="radio" name="question10" value="3">Extremely difficult</input></label>
             </fieldset>
         
-        <button type="submit" id="PHQ-9-submit">Submit</button>
+        <button type="submit" id="submit-button" aria-label="Submit Patient Health Questionnaire">Submit</button>
+
+        <div id="PHQ9-results" aria-live="polite" aria-label="Patient Health Questionnaire results"
+            style="display:none; margin-top:20px; padding:15px; border:1px solid #ccc;">
+        </div>
     </form>
+
+    <script src="scoring.js"></script>
+    <script>
+        questionnaireScoring("PHQ-9", "PHQ9-results");
+    </script>
 </body>
 </html>
