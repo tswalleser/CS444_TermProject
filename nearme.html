@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resources Near Me</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.5/dist/leaflet.css"
+            integrity="sha256-sA+qw9iM2wwP0vHYYFjXYR8uhzM4hP5xMlGosLF3ij0="
+            crossorigin=""
+        />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #map { height: 500px; margin-top: 20px; }
+    #results { margin-top: 20px; }
+  </style>
+    </head>
+    <body>
+        <h1>Mental Health & Therapy Resources Near Me</h1>
+
+        <form id="zipForm">
+            <label for="zipcode">Enter your location (zip code):</label>
+            <input type="text" id="zipcode" name="zipcode" required>
+            <button type="submit" id="submit-button" aria-label="Find Mental Health and Therapy Resources Near Me">Find Resources</button>
+        </form>
+
+        <div id="map"></div>
+        <div id="results"></div>
+
+          <script src="https://unpkg.com/leaflet@1.9.5/dist/leaflet.js"
+            integrity="sha256-kxJY3Dk1jXjV1iDe2F0uG9jJ6E1xVsYJDcM+QAeF0Yw="
+            crossorigin=""></script>
+        <script src="map.js"></script>
+    </body>
+</html>
