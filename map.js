@@ -17,7 +17,7 @@ form.addEventListener("submit", async function(event) {
 
 // Geocode ZIP code to get latitude and longitude
 async function geocodeZip(zip) {
-    const url = `https://nominatim.openstreetmap.org/search?postalcode=${zip}&country=USA&format=json`;
+    const url = `https://nominatim.openstreetmap.org/search?q=${zip}&countrycodes=us&format=json`;
     try {
         const response = await fetch(url);
         const data = await response.json();
@@ -55,9 +55,9 @@ async function searchNearby(coords) {
   const query = `
     [out:json];
     (
-      node["amenity"="clinic"]["healthcare"="mental_health"](around:${radius},${lat},${lon});
-      node["amenity"="hospital"]["department"="psychiatry"](around:${radius},${lat},${lon});
-      node["amenity"="doctors"]["specialty"~"psychology|psychiatry"](around:${radius},${lat},${lon});
+      node["healthcare"~"psychology|psychiatry|psychotherapist|counselling"](around:${radius},${lat},${lon});
+      node["amenity"="clinic"](around:${radius},${lat},${lon});
+      node["office"="psychologist"](around:${radius},${lat},${lon});
     );
     out center;
   `;
